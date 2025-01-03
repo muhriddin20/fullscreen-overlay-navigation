@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #3d3d3d;
+  font-family: "JetBrains Mono", serif;
+}
+
+.open__nav,
+.close__nav {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background-color: transparent;
+  border: none;
+  transition: all 0.3s;
+}
+
+.open__nav:active,
+.close__nav:active {
+  transform: scale(0.9);
+}
+
+.open__nav i,
+.close__nav i {
+  font-size: 35px;
+  color: #fff;
+}
+
+nav {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(90deg, #0d0693 0%, #090979 35%, #087990 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transform: translateX(-100vw);
+  transition: all 0.5s;
+}
+
+nav.show {
+  transform: translateX(0px);
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul a {
+  width: 300px;
+  height: 45px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 24px;
+  display: block;
+  color: #fff;
+  margin-bottom: 15px;
+  line-height: 45px;
+  transition: all 0.3s;
+}
+
+nav ul a:hover {
+  background-color: #fff;
+  color: #111;
+}
